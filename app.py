@@ -1,4 +1,4 @@
-from flask import flask
+from flask import Flask
 
 app = Flask (__name__)
 
@@ -10,3 +10,5 @@ def index():
 @app.route ('/about')
 def about ():
     return 'Saya agun'
+
+app.run(host='0.0.0.0', debug=True, port=8090)
